@@ -1,0 +1,59 @@
+@use 'vars';
+@use 'reset';
+@use 'fonts';
+@use 'global';
+
+body{
+  @extend %opensans-400;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: vars.$color-accent;
+}
+
+.header{
+  padding: 20px 0 30px;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: vars.$color-primary;
+
+  &__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__logo{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  &__lang{
+    display: flex;
+    &--active{
+      @extend %opensans-700;
+    }
+
+  }
+
+  &__actions{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.logo{
+  display: inline-block;
+
+}
+
+.menu{
+  &__list{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+}
