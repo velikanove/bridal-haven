@@ -3,7 +3,7 @@
 @use 'fonts';
 @use 'global';
 
-body{
+body {
   @extend %opensans-400;
   font-size: 20px;
   font-weight: 400;
@@ -11,49 +11,145 @@ body{
   color: vars.$color-accent;
 }
 
-.header{
+.header {
   padding: 20px 0 30px;
   text-transform: uppercase;
   font-size: 16px;
   color: vars.$color-primary;
 
-  &__inner{
+  &__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
   }
 
-  &__logo{
+  &__logo {
     width: 100%;
     text-align: center;
     margin-bottom: 15px;
   }
 
-  &__lang{
+  &__lang {
     display: flex;
-    &--active{
+
+    &--active {
       @extend %opensans-700;
     }
 
   }
 
-  &__actions{
+  &__actions {
     display: flex;
     align-items: center;
     gap: 20px;
   }
 }
 
-.logo{
+.logo {
   display: inline-block;
 
 }
 
-.menu{
-  &__list{
+.menu {
+  &__list {
     display: flex;
     align-items: center;
     gap: 30px;
+  }
+}
+
+.footer {
+  font-size: 16px;
+  color: vars.$color-text-muted;
+
+  &__menu {
+    padding: 55px 0 44px;
+    border-bottom: 1px solid vars.$color-text-muted;
+    margin-bottom: 50px;
+  }
+
+  &__menu-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  &__elements {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 50px;
+  }
+
+  &__element-title {
+    opacity: 0.5;
+    margin-bottom: 20px;
+  }
+
+  &__element-item {
+    margin-bottom: 5px;
+  }
+
+  &__social-list {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__form {
+    width: 250px;
+    position: relative;
+  }
+
+  &__form-input {
+    display: inline-block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid vars.$bg-primary;
+    padding: 1px 30px 5px 0;
+    color: vars.$color-text-muted;
+
+    &::placeholder {
+      color: vars.$color-text-muted;
+    }
+  }
+
+  &__form-btn {
+    position: absolute;
+    right: 0;
+    top: 1px;
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+  }
+
+  &__bottom {
+    background-color: vars.$bg-primary;
+    padding: 7px 0 9px;
+    color: vars.$color-primary;
+    font-size: 11px;
+  }
+
+  &__bottom-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 26px;
+  }
+
+
+  &__bottom-list {
+    display: flex;
+    gap: 0 37px;
+
+  }
+
+  &__bottom-item + .footer__bottom-item{
+    position: relative;
+    &::before{
+      content: '|';
+      position: absolute;
+      left: -20px;
+    }
   }
 }
