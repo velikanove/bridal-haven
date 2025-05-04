@@ -1,0 +1,33 @@
+$color-accent: #3B2317;
+$color-primary: #513C27;
+$color-text-muted: #94897C;
+
+%opensans-300 {
+  font-family: 'OpenSans-Light', sans-serif;
+  font-weight: 300;
+}
+
+%opensans-400 {
+  font-family: 'OpenSans-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%opensans-700 {
+  font-family: 'OpenSans-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%inter-400 {
+  font-family: 'Inter-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%lora-400 {
+  font-family: 'Lora-Regular', serif;
+  font-weight: 400;
+}
+
+%lora-500 {
+  font-family: 'Lora-Medium', serif;
+  font-weight: 500;
+}

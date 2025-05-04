@@ -20,7 +20,7 @@
     "gulp-include": "^2.4.1",
     "gulp-newer": "^1.4.0",
     "gulp-sass": "^6.0.1",
-    "gulp-svgmin": "^4.1.0",
+    "gulp-svgstore": "^9.0.0",
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify-es": "^3.0.0",
     "gulp-webp": "^4.0.1",
