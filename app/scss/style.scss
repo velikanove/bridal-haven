@@ -11,6 +11,14 @@ body {
   color: vars.$color-accent;
 }
 
+.promo{
+  background-color: vars.$bg-primary;
+  padding: 7px 0 9px;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .header {
   padding: 20px 0 30px;
   text-transform: uppercase;
@@ -73,6 +81,15 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+  }
+
+  &__menu-link{
+    border-bottom: 1px solid vars.$bg-primary;
+  }
+
+  &__logo{
+    margin-left: -20px;
+    margin-right: -20px;
   }
   
   &__elements {
@@ -151,5 +168,37 @@ body {
       position: absolute;
       left: -20px;
     }
+  }
+}
+
+.top{
+  min-height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__inner{
+    display: flex;
+    flex-direction: column;
+    padding: 115px 0 50px;
+    margin-right: 134px;
+    max-width: 446px;
+    margin-left: auto; 
+  }
+
+  &__title{
+    font-size: 80px;
+    line-height: 1.2;
+    @extend %lora-400;
+    margin-bottom: 60px;
+  }
+
+  &__link{
+    color: #fff;
+    padding: 12px 38px;
+    border-radius: 3px;
+    display: inline-block;
+    background-color: vars.$color-accent;
+    text-transform: uppercase;
+    align-self: start;
   }
 }
