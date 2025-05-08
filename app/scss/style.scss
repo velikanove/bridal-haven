@@ -314,7 +314,7 @@ body {
     color: vars.$color-text-muted;
   }
 
-  &__input + .join-us__input{
+  &__input+.join-us__input {
     margin-top: 10px;
   }
 
@@ -335,5 +335,61 @@ body {
   &__form-caption {
     font-size: 11px;
     color: vars.$color-primary;
+  }
+}
+
+.designer {
+  padding: 150px 0 210px;
+
+  &__inner {
+    display: flex;
+    padding: 0 40px;
+    justify-content: space-between;
+
+  }
+
+  &__content {
+    max-width: 400px;
+
+  }
+
+  &__title {
+    font-size: 45px;
+    margin-bottom: 50px;
+    @extend %lora-400;
+  }
+
+  &__text {
+    font-size: 16px;
+    color: vars.$color-text-muted;
+    margin-bottom: 20px;
+  }
+
+  &__box {
+    text-align: center;
+    position: relative;
+  }
+
+  &__img {
+    margin-bottom: 40px;
+  }
+
+  &__caption {
+    padding: 20px 18px;
+    width: 300px;
+    @extend %lora-400;
+    border: 3px solid vars.$color-text-muted;
+    position: absolute;
+    top: 180px;
+    left: -160px;
+    background-color: #fff;
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 10px 90px;
+    color: vars.$color-text-muted;
+    border: 1px solid vars.$color-text-muted;
+    cursor: pointer;
   }
 }
