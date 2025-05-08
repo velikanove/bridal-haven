@@ -11,7 +11,7 @@ body {
   color: vars.$color-accent;
 }
 
-.promo{
+.promo {
   background-color: vars.$bg-primary;
   padding: 7px 0 9px;
   font-size: 11px;
@@ -83,15 +83,15 @@ body {
     align-items: center;
   }
 
-  &__menu-link{
+  &__menu-link {
     border-bottom: 1px solid vars.$bg-primary;
   }
 
-  &__logo{
+  &__logo {
     margin-left: -20px;
     margin-right: -20px;
   }
-  
+
   &__elements {
     display: flex;
     justify-content: space-between;
@@ -161,9 +161,10 @@ body {
 
   }
 
-  &__bottom-item + .footer__bottom-item{
+  &__bottom-item+.footer__bottom-item {
     position: relative;
-    &::before{
+
+    &::before {
       content: '|';
       position: absolute;
       left: -20px;
@@ -171,28 +172,28 @@ body {
   }
 }
 
-.top{
+.top {
   min-height: 90vh;
   background-repeat: no-repeat;
   background-size: cover;
 
-  &__inner{
+  &__inner {
     display: flex;
     flex-direction: column;
     padding: 115px 0 50px;
     margin-right: 134px;
     max-width: 446px;
-    margin-left: auto; 
+    margin-left: auto;
   }
 
-  &__title{
+  &__title {
     font-size: 80px;
     line-height: 1.2;
     @extend %lora-400;
     margin-bottom: 60px;
   }
 
-  &__link{
+  &__link {
     color: #fff;
     padding: 12px 38px;
     border-radius: 3px;
@@ -200,5 +201,69 @@ body {
     background-color: vars.$color-accent;
     text-transform: uppercase;
     align-self: start;
+  }
+}
+
+.new-colection {
+  background-image: url(../images/top-decor.svg);
+  background-repeat: no-repeat;
+  background-position: 155px -48%;
+
+  &__inner {
+    padding: 150px 0;
+    display: flex;
+  }
+
+  &__content {
+    padding: 75px 40px 0 40px;
+    max-width: 492px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+    @extend %lora-400;
+    font-size: 45px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+    color: vars.$color-text-muted;
+  }
+
+  &__link {
+    margin-top: auto;
+    font-size: 16px;
+    color: vars.$color-text-muted;
+    padding: 10px 65px;
+    border: 1px solid vars.$bg-primary;
+    align-self: flex-start;
+  }
+
+  &__img {
+    padding-top: 75px;
+  }
+
+  &__box {
+    position: relative;
+    display: flex;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  &__box-img {
+    position: absolute;
+    right: 0;
+    left: -75px;
+    max-height: fit-content;
+  }
+
+  &__caption {
+    color: vars.$color-text-muted;
+    width: 290px;
+    margin-top: auto;
+    margin-bottom: 40px;
   }
 }
