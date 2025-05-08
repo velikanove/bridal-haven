@@ -207,7 +207,7 @@ body {
 .new-colection {
   background-image: url(../images/top-decor.svg);
   background-repeat: no-repeat;
-  background-position: 155px -48%;
+  background-position: 155px -38%;
 
   &__inner {
     padding: 150px 0;
@@ -265,5 +265,131 @@ body {
     width: 290px;
     margin-top: auto;
     margin-bottom: 40px;
+  }
+}
+
+.join-us {
+  background-color: vars.$bg-primary;
+
+  &__inner {
+    display: flex;
+    padding: 0 40px;
+    gap: 40px;
+  }
+
+  &__img {
+    max-width: 540px;
+  }
+
+  &__box {
+    padding: 35px 0;
+  }
+
+  &__title {
+    font-size: 45px;
+    margin-bottom: 20px;
+    @extend %lora-400;
+  }
+
+  &__text {
+    font-size: 30px;
+    color: vars.$color-primary;
+    @extend %lora-400;
+    margin-bottom: 40px;
+  }
+
+
+  &__form {
+    margin-bottom: 0;
+  }
+
+  &__input {
+    display: block;
+    border: none;
+    border-bottom: 1px solid vars.$color-text-muted;
+    width: 100%;
+    padding-bottom: 10px;
+    background-color: transparent;
+    @extend %opensans-400;
+    color: vars.$color-text-muted;
+  }
+
+  &__input+.join-us__input {
+    margin-top: 10px;
+  }
+
+  &__btn {
+    text-transform: uppercase;
+    width: 100%;
+    display: block;
+    background-color: vars.$color-accent;
+    padding: 12px;
+    border-radius: 3px;
+    border: none;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  &__form-caption {
+    font-size: 11px;
+    color: vars.$color-primary;
+  }
+}
+
+.designer {
+  padding: 150px 0 210px;
+
+  &__inner {
+    display: flex;
+    padding: 0 40px;
+    justify-content: space-between;
+
+  }
+
+  &__content {
+    max-width: 400px;
+
+  }
+
+  &__title {
+    font-size: 45px;
+    margin-bottom: 50px;
+    @extend %lora-400;
+  }
+
+  &__text {
+    font-size: 16px;
+    color: vars.$color-text-muted;
+    margin-bottom: 20px;
+  }
+
+  &__box {
+    text-align: center;
+    position: relative;
+  }
+
+  &__img {
+    margin-bottom: 40px;
+  }
+
+  &__caption {
+    padding: 20px 18px;
+    width: 300px;
+    @extend %lora-400;
+    border: 3px solid vars.$color-text-muted;
+    position: absolute;
+    top: 180px;
+    left: -160px;
+    background-color: #fff;
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 10px 90px;
+    color: vars.$color-text-muted;
+    border: 1px solid vars.$color-text-muted;
+    cursor: pointer;
   }
 }
