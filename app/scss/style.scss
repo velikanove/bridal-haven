@@ -330,6 +330,8 @@ body {
     margin-bottom: 20px;
     cursor: pointer;
     color: #fff;
+    position: relative;
+    z-index: 10;
   }
 
   &__form-caption {
@@ -340,6 +342,15 @@ body {
 
 .designer {
   padding: 150px 0 210px;
+  position: relative;
+
+  &__decor-img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) ;
+    top: -225px;
+    z-index: 5;
+  }
 
   &__inner {
     display: flex;
@@ -357,6 +368,7 @@ body {
     font-size: 45px;
     margin-bottom: 50px;
     @extend %lora-400;
+    text-transform: uppercase;
   }
 
   &__text {
@@ -377,7 +389,6 @@ body {
   &__caption {
     padding: 20px 18px;
     width: 300px;
-    @extend %lora-400;
     border: 3px solid vars.$color-text-muted;
     position: absolute;
     top: 180px;
@@ -391,5 +402,58 @@ body {
     color: vars.$color-text-muted;
     border: 1px solid vars.$color-text-muted;
     cursor: pointer;
+  }
+}
+
+.our-advantages {
+  background-color: vars.$bg-primary;
+
+  &__wrapper {
+    padding: 64px 0 34px;
+    display: flex;
+    position: relative;
+  }
+
+  &__img{
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+  }
+
+  &-item-decor{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__inner {
+    margin-left: auto;
+    padding-right: 128px;
+  }
+
+  &__title {
+    font-size: 45px;
+    margin-bottom: 50px;
+    @extend %lora-400;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    column-count: 2;
+    column-gap: 80px;
+  }
+
+  &__item {
+    margin-bottom: 30px;
+    padding-left: 50px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 22px;
+      left: 0;
+      background-image: url(../images/our-advantages-decor.svg);
+    }
   }
 }
