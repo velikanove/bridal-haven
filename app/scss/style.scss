@@ -344,10 +344,10 @@ body {
   padding: 150px 0 210px;
   position: relative;
 
-  &__decor-img{
+  &__decor-img {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%) ;
+    transform: translateX(-50%);
     top: -225px;
     z-index: 5;
   }
@@ -414,13 +414,13 @@ body {
     position: relative;
   }
 
-  &__img{
+  &__img {
     position: absolute;
     bottom: 0;
     left: 40px;
   }
 
-  &-item-decor{
+  &-item-decor {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -447,7 +447,8 @@ body {
     margin-bottom: 30px;
     padding-left: 50px;
     position: relative;
-    &::before{
+
+    &::before {
       content: '';
       position: absolute;
       width: 30px;
@@ -455,5 +456,71 @@ body {
       left: 0;
       background-image: url(../images/our-advantages-decor.svg);
     }
+  }
+}
+
+.our-blog {
+  padding: 150px 0 0;
+
+  &__inner {
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 1fr 280px 330px;
+    gap: 20px;
+
+    background-image: url(../images/our-blog-img-decor.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    padding-bottom: 100px;
+  }
+
+  &__title {
+    font-size: 45px;
+    margin-bottom: 50px;
+    @extend %lora-400;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-size: 16px;
+    color: vars.$color-text-muted;
+    margin-bottom: 50px;
+    max-width: 400px;
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 10px 90px;
+    color: vars.$color-text-muted;
+    border: 1px solid vars.$color-text-muted;
+    cursor: pointer;
+  }
+
+  &__box-right {
+    grid-row: span 2;
+    align-self: center;
+    margin-top: 35px;
+  }
+
+  &__box-img {
+    margin-bottom: 20px;
+  }
+
+  &__box-link {
+    margin-bottom: 5px;
+    @extend %lora-400;
+    color: vars.$color-text-muted;
+    display: inline-block;
+  }
+
+  &__box-date {
+    font-size: 16px;
+    @extend %opensans-300;
+    color: vars.$color-primary;
+  }
+
+  &__box-bottom {
+    grid-column: span 2;
+    margin-left: auto;
   }
 }
