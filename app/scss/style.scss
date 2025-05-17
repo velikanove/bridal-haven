@@ -312,6 +312,8 @@ body {
     background-color: transparent;
     @extend %opensans-400;
     color: vars.$color-text-muted;
+    position: relative;
+    z-index: 10;
   }
 
   &__input+.join-us__input {
@@ -522,5 +524,68 @@ body {
   &__box-bottom {
     grid-column: span 2;
     margin-left: auto;
+  }
+}
+
+.appointment {
+  padding: 50px 0 130px;
+  background-image: url(../images/appointment-decor.svg);
+  background-repeat: no-repeat;
+  background-position: center 110px;
+  z-index: 5;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 77px;
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 0 40px;
+  }
+
+  &__box-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  &__box-title {
+    margin-bottom: 80px;
+    font-size: 30px;
+    @extend %lora-400;
+    text-transform: uppercase;
+  }
+
+  &__box-text {
+    margin-bottom: 30px;
+    @extend %opensans-700;
+    color: vars.$color-text-muted;
+  }
+
+  &__input {
+    border: none;
+    border-bottom: 1px solid vars.$color-text-muted;
+    color: vars.$color-text-muted;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: transparent;
+
+    &::placeholder {
+      color: vars.$color-text-muted;
+    }
+  }
+
+  &__btn {
+    margin-top: auto;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 3px;
+    padding: 12px;
+    background-color: vars.$color-accent;
+    border: none;
+    cursor: pointer;
   }
 }
