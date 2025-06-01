@@ -959,7 +959,7 @@ body {
     z-index: 5;
     right: 58px;
     top: -110px;
-    }
+  }
 
   &__title {
     @extend %lora-400;
@@ -1010,4 +1010,69 @@ body {
 
 .arrow-next {
   right: 0;
+}
+
+.page-404 {
+  &__container {
+    max-width: 1560px;
+    margin: 0 auto;
+  }
+
+  &__inner {
+    display: flex;
+  }
+
+  &__content {
+    width: 731px;
+    margin: 205px 14px 0 35px;
+    @extend %lora-400;
+
+  }
+
+  &__text {
+    font-size: 160px;
+    margin-bottom: 60px;
+  }
+
+  &__link {
+    font-size: 48px;
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+
+    span {
+      display: inline-block;
+      width: 621px;
+      text-transform: uppercase;
+    }
+  }
+
+}
+
+.moving {
+overflow: hidden;
+
+  &__text {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    white-space: nowrap;
+    @extend %lora-400;
+    opacity: 0.2;
+    text-transform: uppercase;
+    font-size: 160px;
+    animation-name: moving;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes moving{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
 }
