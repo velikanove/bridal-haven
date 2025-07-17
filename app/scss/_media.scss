@@ -45,6 +45,22 @@
     width: 204px;
     margin-bottom: 0;
   }
+
+  .designer__inner {
+    padding: 0;
+  }
+
+  .designer__caption {
+    left: -74px;
+    top: 350px;
+  }
+
+  .our-advantages__title {
+    position: relative;
+    z-index: 1;
+  }
+
+
 }
 
 @media (max-width: 1000px) {
@@ -93,6 +109,38 @@
     &__title {
       margin-bottom: 48px;
     }
+  }
+
+  .designer__img {
+    max-width: 434px;
+    height: 554px;
+    object-fit: cover;
+  }
+
+  .designer__decor-img {
+    width: 280px;
+    top: -82px;
+  }
+
+  .our-advantages__img {
+    left: 0;
+  }
+
+  .our-advantages__inner {
+    padding-right: 0;
+  }
+
+  .our-advantages__list {
+    column-gap: 40px;
+  }
+
+  .our-advantages-item-decor {
+    right: -85px;
+  }
+
+  .our-blog__inner {
+    padding: 0 0 100px;
+    grid-template-columns: 1fr 280px 246px;
   }
 
 }
@@ -224,6 +272,66 @@
     padding-top: 0;
   }
 
+  .designer__img {
+    max-width: 320px;
+    height: 520px;
+  }
+
+  .designer__text:last-child {
+    display: none;
+  }
+
+  .designer__inner {
+    gap: 20px;
+  }
+
+  .designer__title {
+    font-size: 30px;
+  }
+
+  .designer {
+    padding: 100px 0;
+  }
+
+  .designer__caption {
+    left: 10px;
+  }
+
+  .our-advantages__img {
+    width: 320px;
+    height: 460px;
+    object-fit: cover;
+  }
+
+  .our-advantages__title {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .our-advantages__list {
+    column-count: 1;
+  }
+
+  .our-advantages__item {
+    margin-bottom: 20px;
+  }
+
+  .our-advantages__wrapper {
+    padding: 24px 0 4px;
+  }
+
+  .our-advantages-item-decor {
+    right: -150px;
+  }
+
+  .our-blog__inner {
+    grid-template-columns: 1fr 280px;
+  }
+
+  .our-blog__box-right {
+    display: none;
+  }
+
 }
 
 @media (max-width: 600px) {
@@ -337,6 +445,97 @@
     margin-bottom: 30px;
   }
 
+  .designer__text:nth-child(2) {
+    display: none;
+  }
+
+  .designer__img {
+    max-width: 220px;
+    height: 320px;
+    margin-bottom: 25px;
+  }
+
+  .designer__text {
+    font-size: 16px;
+  }
+
+  .designer__title {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .designer__caption {
+    padding: 10px;
+    font-size: 11px;
+    top: 225px;
+    width: 198px;
+    text-align: left;
+  }
+
+  .designer__link {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .our-advantages__img {
+    width: 220px;
+    height: 344px;
+  }
+
+  .our-advantages__title {
+    font-size: 20px;
+  }
+
+  .our-advantages__item {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .our-blog__img--mobile {
+    display: none;
+  }
+
+  .our-blog__box-bottom {
+    grid-column: span 1;
+    margin-left: auto;
+  }
+
+  .our-blog__inner {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 70px;
+    background-image: none;
+  }
+
+  .our-blog {
+    padding-top: 70px;
+  }
+
+  .our-blog__title {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .our-blog__link {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .our-blog__box-link {
+    font-size: 16px;
+  }
+
+  .our-blog__text {
+    margin-bottom: 20px;
+  }
+
+  .our-blog__box-img {
+    height: 242px;
+    object-fit: cover;
+
+  }
+
 }
 
 @media (max-width: 440px) {
@@ -385,8 +584,60 @@
     }
   }
 
-     .new-colection__inner{
-      justify-content: space-between;
-     }
+  .new-colection__inner {
+    justify-content: space-between;
+  }
+
+  .designer__img {
+    max-width: 160px;
+  }
+
+  .designer__caption {
+    width: 140px;
+  }
+
+  .our-advantages__inner {
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .our-advantages__img {
+    width: 100%;
+    height: 185px;
+    top: -100px;
+    object-position: top;
+  }
+
+  .our-advantages__wrapper {
+    padding-top: 100px;
+  }
+
+  .our-advantages-item-decor {
+    right: -130px;
+    top: 112px;
+  }
+
+  .our-advantages__item {
+    padding-top: 35px;
+    padding-left: 0;
+  }
+
+  .our-advantages__item::before {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+  }
+
+  .our-blog__inner{
+    position: relative;
+    padding-bottom: 130px;
+  }
+
+  .our-blog__link{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 70px;
+  }
 
 }
