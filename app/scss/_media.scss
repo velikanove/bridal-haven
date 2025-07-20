@@ -68,6 +68,10 @@
     max-width: 100%;
   }
 
+  .blog-one h1 {
+    font-size: 64px;
+  }
+
   /*1200*/
 }
 
@@ -382,7 +386,7 @@
   }
 
   .blog__list {
-    gap:20px;
+    gap: 20px;
     grid-template-columns: repeat(3, 1fr);
   }
 
@@ -413,6 +417,32 @@
   .reviews-slider__item img {
     width: 100%;
   }
+
+  .blog-one h1 {
+    font-size: 42px;
+  }
+
+  .blog-one__stats {
+    margin-bottom: 20px;
+  }
+
+  .blog-one b {
+    font-size: 26px;
+  }
+
+  .blog-one b:first-of-type {
+    margin-bottom: 30px;
+  }
+
+  .blog-one h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .blog-one h4 {
+    font-size: 24px;
+  }
+
 
   /* 768 */
 }
@@ -648,25 +678,37 @@
     font-size: 30px;
   }
 
-  .blog__list{
+  .blog__list {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .blog__nav-btns{
+  .blog__nav-btns {
     display: none;
   }
 
-  .blog__nav-category{
+  .blog__nav-category {
     width: 100%;
     margin-right: 0;
   }
 
-    .search,
-    .search__form{
+  .search,
+  .search__form {
     width: 100%;
   }
 
-  
+  .blog-one__stats{
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .blog-one li{
+    margin-left: 0;
+  }
+
+  .blog-one .blog-one__date::after{
+    display: none;
+  }
 
   /*600 */
 }
@@ -822,8 +864,13 @@
     bottom: 70px;
   }
 
-  .blog__list{
+  .blog__list {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .blog-one h1{
+    font-size: 32px;
+  }
+
   /*440*/
 }
