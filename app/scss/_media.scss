@@ -143,6 +143,12 @@
     grid-template-columns: 1fr 280px 246px;
   }
 
+  .appointment__box {
+    gap: 20px;
+    padding: 0;
+  }
+
+  /* 1000 */
 }
 
 @media (max-width: 920px) {
@@ -332,6 +338,33 @@
     display: none;
   }
 
+
+
+  /* 920 */
+}
+
+@media (max-width: 768px) {
+  .appointment__title {
+    font-size: 30px;
+  }
+
+  .appointment__box-title {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+
+  .appointment {
+    padding-bottom: 100px;
+    background-position: center 200px;
+    background-size: 200px;
+  }
+
+  .appointment__img {
+    min-height: 580px;
+    object-fit: cover;
+  }
+
+  /* 768 */
 }
 
 @media (max-width: 600px) {
@@ -536,6 +569,55 @@
 
   }
 
+  .appointment__box-title {
+    margin-bottom: 30px;
+  }
+
+  .appointment {
+    padding-bottom: 70px;
+  }
+
+  .appointment__img {
+    min-height: 505px;
+    max-width: 220px;
+  }
+
+  .appointment__box-form {
+    max-width: 220px;
+  }
+
+  /*600 */
+}
+
+@media (max-width: 470px) {
+  .appointment__img {
+    min-height: auto;
+    height: 250px;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .appointment__box-form {
+    max-width: 220px;
+    margin: 0 auto;
+    order: 1;
+  }
+
+  .appointment__box {
+    grid-template-columns: 1fr;
+  }
+
+  .appointment__box-title {
+    text-align: center;
+  }
+
+  .appointment {
+    padding-bottom: 40px;
+    padding-top: 0px;
+    background-position: right 320px;
+  }
+
+  /*470 */
 }
 
 @media (max-width: 440px) {
@@ -628,12 +710,12 @@
     top: 0;
   }
 
-  .our-blog__inner{
+  .our-blog__inner {
     position: relative;
     padding-bottom: 130px;
   }
 
-  .our-blog__link{
+  .our-blog__link {
     position: absolute;
     left: 0;
     right: 0;
