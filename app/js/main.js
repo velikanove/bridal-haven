@@ -5,16 +5,16 @@ menuBtn.addEventListener('click', () => {
   menu.classList.toggle('menu--active')
 })
 
-const viewLine = document.querySelector('.veiw-mode__btn--line');
-const viewGride = document.querySelector('.veiw-mode__btn--grid');
+const viewLine = document.querySelector('.view-mode__btn--line');
+const viewGride = document.querySelector('.view-mode__btn--grid');
 const viewContaier = document.querySelector('.view-mode__container');
 
-viewGride.addEventListener('click', ()=> {
+viewGride?.addEventListener('click', ()=> {
   viewContaier.classList.add('view-mode__container--grid');
   viewContaier.classList.remove('view-mode__container--line');
 });
 
-viewLine.addEventListener('click', ()=> {
+viewLine?.addEventListener('click', ()=> {
   viewContaier.classList.add('view-mode__container--line');
   viewContaier.classList.remove('view-mode__container--grid');
 });
@@ -33,7 +33,6 @@ const swiper = new Swiper('.acesories__slider', {
 });
 
 const swiperReviews = new Swiper('.reviews-slider', {
-  slidesPerView: 12,
   spaceBetween: 16,
   loop: true,
 
@@ -48,6 +47,20 @@ const swiperReviews = new Swiper('.reviews-slider', {
     type: "fraction",
   },
 
+  breakpoints: {
+    360: {
+      slidesPerView: 4,
+      spaceBetween: 16,
+    },
+    768: {
+      slidesPerView: 8,
+      spaceBetween: 16,
+    },
+    1024: {
+      slidesPerView: 12,
+      spaceBetween: 16,
+    },
+  },
 });
 
 const rangeSlider = document.querySelector('.range__slider');
