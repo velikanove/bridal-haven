@@ -1674,7 +1674,7 @@ body {
   }
 }
 
-.veiw-mode {
+.view-mode {
   display: flex;
   gap: 10px;
 
@@ -1691,22 +1691,19 @@ body {
 
   &__container--line {
     display: block;
-
-    .catalog__content-item {
+    .catalog__content-item{
       display: flex;
-
-      img {
+      img{
         margin-right: 20px;
         width: 180px;
       }
     }
 
-    .blog__list-item {
+    .blog__list-item{
       display: flex;
       gap: 20px;
       margin-bottom: 20px;
-
-      img {
+      img{
         width: 180px;
       }
     }

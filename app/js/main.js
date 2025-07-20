@@ -5,8 +5,8 @@ menuBtn.addEventListener('click', () => {
   menu.classList.toggle('menu--active')
 })
 
-const viewLine = document.querySelector('.veiw-mode__btn--line');
-const viewGride = document.querySelector('.veiw-mode__btn--grid');
+const viewLine = document.querySelector('.view-mode__btn--line');
+const viewGride = document.querySelector('.view-mode__btn--grid');
 const viewContaier = document.querySelector('.view-mode__container');
 
 viewGride?.addEventListener('click', ()=> {
