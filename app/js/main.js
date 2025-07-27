@@ -1,3 +1,37 @@
+const breakpoint = window.matchMedia('(min-width: 600px)');
+let sliderMobile = null;
+
+function initSwiper() {
+  sliderMobile = new Swiper('.slider-mobile', {
+    slidesPerView: 1,
+    loop: true,
+    navigation: {
+      nextEl: '.product__arrow-next',
+      prevEl: '.product__arrow-prev',
+    }
+  })
+}
+
+function destroySwiper() {
+  if (sliderMobile) {
+    sliderMobile.destroy(true, true);
+    sliderMobile = null;
+  }
+}
+
+function handleBreakpointChange(e) {
+  if (e.matches) {
+    destroySwiper()
+  } else{
+    if (!sliderMobile) initSwiper()
+  }
+}
+
+handleBreakpointChange(breakpoint);
+
+breakpoint.addEventListener('change', handleBreakpointChange);
+
+
 const menuBtn = document.querySelector('.menu__btn');
 const menu = document.querySelector('.menu');
 
@@ -28,6 +62,20 @@ const swiper = new Swiper('.acesories__slider', {
   navigation: {
     nextEl: '.arrow-next',
     prevEl: '.arrow-prev',
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      
+    },
+    600: {
+      slidesPerView: 2,
+      
+    },
+    800: {
+      slidesPerView: 3,
+      
+    },
   },
 
 });
