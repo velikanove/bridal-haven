@@ -5,23 +5,41 @@
   <section class="product">
     <div class="container">
       <div class="product__inner">
-        <div class="product__images">
-          <picture>
-            <source srcset="images/product-1.avif" type="image/avif">
-            <source srcset="images/product-1.webp" type="image/webp">
-            <img src="images/product-1.jpg" alt="Alt text">
-          </picture>
-          <picture>
-            <source srcset="images/product-2.avif" type="image/avif">
-            <source srcset="images/product-2.webp" type="image/webp">
-            <img src="images/product-2.jpg" alt="Alt text">
-          </picture>
-          <picture>
-            <source srcset="images/product-3.avif" type="image/avif">
-            <source srcset="images/product-3.webp" type="image/webp">
-            <img src="images/product-3.jpg" alt="Alt text">
-          </picture>
+
+        <div class="slider-mobile">
+
+          <div class="product__images swiper-wrapper">
+
+            <picture class="swiper-slide">
+              <source srcset="images/product-1.avif" type="image/avif">
+              <source srcset="images/product-1.webp" type="image/webp">
+              <img src="images/product-1.jpg" alt="Alt text">
+            </picture>
+            <picture class="swiper-slide">
+              <source srcset="images/product-2.avif" type="image/avif">
+              <source srcset="images/product-2.webp" type="image/webp">
+              <img src="images/product-2.jpg" alt="Alt text">
+            </picture>
+            <picture class="swiper-slide">
+              <source srcset="images/product-3.avif" type="image/avif">
+              <source srcset="images/product-3.webp" type="image/webp">
+              <img src="images/product-3.jpg" alt="Alt text">
+            </picture>
+          </div>
+
+          <div class="product-slider__arrow product__arrow-prev">
+            <svg width="10" height="18">
+              <use xlink:href="images/sprite.svg#arrow-slider-prev"></use>
+            </svg>
+          </div>
+          <div class="product-slider__arrow product__arrow-next">
+            <svg width="10" height="18">
+              <use xlink:href="images/sprite.svg#arrow-slider-next"></use>
+            </svg>
+          </div>
+
         </div>
+
         <div class="product__content">
           <h3 class="product__title">
             NAOMI
