@@ -1,3 +1,61 @@
+const openBtn = document.querySelector('.open-modal');
+const closeBtn = document.querySelector('.close-modal');
+const modal = document.querySelector('.modal');
+const modalOverlay = document.querySelector('.modal__overlay');
+
+function openModal() {
+  modal.setAttribute('aria-hidden', 'false')
+  document.body.classList.add('scroll-lock')
+}
+
+function closeModal() {
+  modal.setAttribute('aria-hidden', 'true')
+  document.body.classList.remove('scroll-lock')
+}
+
+if (modalOverlay) {
+  modalOverlay.addEventListener('click', closeModal);
+}
+
+openBtn.addEventListener('click', openModal);
+closeBtn.addEventListener('click', closeModal);
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && modal.getAttribute('aria-hidden') === 'false') {
+    closeModal();
+  }
+})
+
+const openBtnPopup = document.querySelector('.open-popup');
+const closeBtnPopup = document.querySelector('.close-popup');
+const popup = document.querySelector('.popup');
+const popupOverlay = document.querySelector('.popup__overlay');
+
+function openPopup() {
+  popup.setAttribute('aria-hidden', 'false')
+  document.body.classList.add('scroll-lock')
+}
+
+function closePopup() {
+  popup.setAttribute('aria-hidden', 'true')
+  document.body.classList.remove('scroll-lock')
+}
+
+if (popupOverlay) {
+  popupOverlay.addEventListener('click', closePopup);
+}
+
+openBtnPopup.addEventListener('click', openPopup);
+closeBtnPopup.addEventListener('click', closePopup);
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && popup.getAttribute('aria-hidden') === 'false') {
+    closePopup();
+  }
+})
+
+
+
 const breakpoint = window.matchMedia('(min-width: 600px)');
 let sliderMobile = null;
 
